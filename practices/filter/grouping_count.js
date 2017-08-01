@@ -11,5 +11,4 @@ function grouping_count(collection) {
 	});
 	return res;
 }
-console.log(grouping_count([1,1,1,1,2,3,1,3,4,2,3,1,3,4,2]));
 module.exports = grouping_count;
