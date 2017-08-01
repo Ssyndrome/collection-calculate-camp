@@ -1,9 +1,11 @@
 'use strict';
 
 function average_to_letter(collection) {
-
-  //在这里写入代码
+	var sum = 0;
+	collection.map(function(i){
+		sum += i;
+	});
+	return String.fromCharCode(parseInt(sum/collection.length)+97);
 }
-
 module.exports = average_to_letter;
 

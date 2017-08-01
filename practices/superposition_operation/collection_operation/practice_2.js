@@ -1,9 +1,14 @@
 'use strict';
 
 function hybrid_operation_to_uneven(collection) {
-
-  //在这里写入代码
+	var collection_ = [];
+	collection.forEach(function(val){
+		if(val%2 !== 0){
+			collection_.push(val*3+2);
+		}
+	}
+	);
+	return collection_;
 }
-
 module.exports = hybrid_operation_to_uneven;
 
