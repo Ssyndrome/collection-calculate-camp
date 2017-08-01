@@ -1,8 +1,11 @@
 'use strict';
 
 function calculate_elements_sum(collection) {
-  //在这里写入代码
+	var res = 0;
+	collection.forEach(function(val){
+		res += val;
+	});
+	return res;
 }
-
 module.exports = calculate_elements_sum;
 
