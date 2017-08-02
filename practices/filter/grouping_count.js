@@ -2,7 +2,7 @@
 
 function grouping_count(collection) {
 	var res = {};
-	collection.forEach(function(val){
+	collection.map(function(val){
 		if(res[val]){
 			res[val]++;
 		}else{
