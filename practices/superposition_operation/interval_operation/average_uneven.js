@@ -1,8 +1,14 @@
 'use strict';
 
 function average_uneven(collection) {
-
-  //在这里写入代码
+	var res = 0;
+	var c = 0;
+	collection.forEach(function(val){
+		if(val%2 !== 0){
+			res += val;
+			c++;
+		}
+	});
+	return res/c;
 }
-
 module.exports = average_uneven;
