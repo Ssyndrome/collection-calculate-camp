@@ -13,5 +13,6 @@ function get_string(a){
 		return(String.fromCharCode(parseInt(a/26)+95)+'z');
 	}else{
 		return(String.fromCharCode(parseInt(a/26)+96)+String.fromCharCode(a%26+96));
+	}
 }
 module.exports = number_map_to_word;
